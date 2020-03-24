@@ -1,0 +1,50 @@
+.list {
+  list-style: none;  /*去掉无需列表的圆点*/
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  width: 1200px;
+  height: 600px;
+}
+.list .item {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+.list .item.active{ /*指定那张在上面*/
+  z-index: 100;
+}
+.list .item img {
+  width: 100%;
+}
+.wrap {
+  position: relative;
+  width: 1200px;
+}
+.btn {
+  /*布局属性*/
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  /*样式*/
+  width: 50px;
+  height: 200px;
+  background-color: rgba(0, 0,0, 0.4);
+  color: rgba(255, 255, 255, 0.6);
+  border: none;
+  cursor: pointer;
+}
+.btn.left {
+  left: 0px;
+}
+.btn.right {
+  right: 0px;
+}
+.btn:hover {
+  background-color: rgba(0, 0,0, 0.9);
+  color: rgba(255, 255, 255, 1);
+}
